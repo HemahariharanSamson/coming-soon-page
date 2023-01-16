@@ -1,0 +1,126 @@
+*{
+    font-family: url(./Nunito-VariableFont_wght.ttf);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 7%;
+    background: rgb(234, 234, 234);
+    min-height: 100vh;
+    gap: 20px;
+    padding-bottom: 80px;
+}
+
+.container .content{
+    flex: 1 1 400px;
+}
+
+.container .image{
+    flex: 1 1 400px;
+}
+
+.container .image img{
+    width: 100%;
+}
+
+.container .content .title{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.container .content p{
+    padding: 5px 0;
+    color: rgb(125, 125, 125);
+}
+
+.container .content .counter{
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.container .content .counter .box{
+    padding: 5px;
+    background: none;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1 1 20px;;
+}
+
+.container .content .counter .box h3{
+    font-size: 50px;
+    color: gray;
+}
+
+.container .content .counter .box span{
+    font-size: 20px;
+    color: gray;
+}
+
+button{
+    display: inline-block;
+    padding: 8px 30px;
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: bold;
+    background: gray;
+    color: rgb(48, 46, 46);
+    transition: .2s ease-out;
+    border-radius: 10px;
+}
+
+button:hover{
+    background: black;
+    color: white;
+}
+
+@media (max-width:400px){
+    .container{
+        padding: 20px;
+    }
+
+    .conatiner .content{
+        text-align: center;
+    }
+
+    .container .content .title{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .container .content p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .container .content .counter{
+        gap: 5px;
+    }
+
+    .container .content .counter .box h3{
+        font-size: 30px;
+    }
+
+    .container .content .counter .box span{
+        font-size: 15px;
+    }
+
+    button{
+        margin: auto;
+        display: grid;
+    }
+}
+
+
